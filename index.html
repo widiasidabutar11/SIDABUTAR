@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power - Business Template</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .top-bar {
+            background-color: #37B7C3;
+            color: #fff;
+            padding: 0.5rem 0;
+        }
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        .navbar-nav .nav-link {
+            color: #000 !important;
+        }
+        .navbar-nav .nav-link.active, 
+        .navbar-nav .nav-link:focus, 
+        .navbar-nav .nav-link:hover {
+            color: #ff0000 !important;
+        }
+        .header {
+            position: relative;
+            background-color: #f8f9fa;
+            padding: 2rem 1rem;
+        }
+        .header-content {
+            z-index: 2;
+            position: relative;
+        }
+        .header img {
+            width: 50%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .services-section, .testimonials-section, .news-section {
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #ffffff;
+        }
+        .footer a:hover {
+            color: #d4d4d4;
+        }
+        .btn-primary {
+            background-color: red; /* Warna latar belakang merah */
+            border: none; /* Menghilangkan border default */
+            color: white; /* Warna teks putih */
+            font-size: 16px; /* Ukuran font */
+            border-radius: 4px; /* Sudut membulat */
+            padding: 10px 20px; /* Jarak padding di dalam tombol */
+        }
+        .btn-primary:hover {
+            background-color: darkred; /* Warna latar belakang saat hover */
+        }
+        .main-section {
+            display: flex;
+            padding: 20px;
+        }
+        .left-section {
+            flex: 1;
+            background-color: #FF6F61;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 20px;
+        }
+        .left-section img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+        }
+        .left-section .btn-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            color: #FF6F61;
+        }
+        .right-section {
+            flex: 1;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .feature {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .feature-content h5 {
+            margin: 0 0 5px;
+        }
+        .feature-content p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <span>796 Bridle City, United Kingdom</span>
+            <a href="mailto:support@yourmail.com">support@yourmail.com</a>
+            <span>|</span>
+            <a href="#">Live chat</a>
+        </div>
+        <div>
+            <a href="#">Language</a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md bg-white navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Power</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Creative Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<div class="header text-left">
+    <div class="container header-content">
+        <h1>We Provide You Trusted </h1>
+        <h1>Business & Maximum </h1>
+        <h1>Profited Amount!</h1>
+        <p>Mauris quis tincidunt urna, lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Aliquam et malesuada nunc, facilisis pharetra ex, nec molis lacus </p>
+        <a href="#" class="btn btn-primary">View Our Portfolio</a>
+    </div>
+    <img src="slider.jpg" alt="Header image">
+</div>
+
+<!-- Main Section -->
+<div class="main-section">
+    <div class="left-section">
+        <img src="news-6.jpg" alt="Video Thumbnail">
+        <button class="btn-play">watch now</button>
+    </div>
+    <div class="right-section">
+        <div class="feature">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+                <h5>Feature 1</h5>
+                <p>Description of Feature 1</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+                <h5>Feature 2</h5>
+                <p>Description of Feature 2</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+                <h5>Feature 3</h5>
+                <p>Description of Feature 3</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div class="services-section bg-light">
+    <div class="container text-center">
+        <h2>Creative Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Consulting</h5>
+                        <p class="card-text">Mauris scelerisque elit, vitae aliquam eros.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Financial Solution</h5>
+                        <p class="card-text">Mauris scelerisque elit, vitae aliquam eros.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Client's Development</h5>
+                        <p class="card-text">Mauris scelerisque elit, vitae aliquam eros.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Consulting</h5>
+                        <p class="card-text">Mauris scelerisque elit, vitae aliquam eros.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Financial Solution</h5>
+                        <p class="card-text">Mauris scelerisque elit, vitae aliquam eros.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Client's Development</h5>
+                        <p class="card-text">Mauris scelerisque elit, vitae aliquam eros.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="testimonials-section bg-secondary text-white text-center">
+    <div class="container">
+        <h2>Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                            <footer class="blockquote-footer text-white">Jason Frankie, <cite title="Source Title">Manager</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                            <footer class="blockquote-footer text-white">Sarah Johnson, <cite title="Source Title">CEO</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- News Section -->
+<div class="news-section bg-light text-center">
+    <div class="container">
+        <h2>Latest News</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="news-1.jpg" alt="News image">
+                    <div class="card-body">
+                        <h5 class="card-title">News Title 1</h5>
+                        <p class="card-text">Brief description of the news article.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="news-2.jpg" alt="News image">
+                    <div class="card-body">
+                        <h5 class="card-title">News Title 2</h5>
+                        <p class="card-text">Brief description of the news article.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="news-5.jpg" alt="News image">
+                    <div class="card-body">
+                        <h5 class="card-title">News Title 3</h5>
+                        <p class="card-text">Brief description of the news article.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer text-center">
+    <div class="container">
+        <p>&copy; 2023 Power. All Rights Reserved.</p>
+        <div>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
